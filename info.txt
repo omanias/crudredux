@@ -1,0 +1,9 @@
+json-server db.json --port 4000
+
+npm i react-redux redux redux-thunk
+
+npm i axios
+
+npm i sweetalert2
+
+types=> actions
