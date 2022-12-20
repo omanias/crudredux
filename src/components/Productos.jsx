@@ -36,7 +36,7 @@ const Productos = () => {
                         <th scope='col'>Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody key={productos}>
                     {productos.length > 0 ?
                         (
                             productos.map(producto => (
