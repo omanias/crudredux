@@ -12,6 +12,7 @@ const Productos = () => {
         //Consultar la API
         const cargarProductos = () => dispatch(obtenerProductosAction())
         cargarProductos()
+        //eslint-disable-next-line
     }, [])
 
     //Obtener el state
@@ -36,12 +37,12 @@ const Productos = () => {
                         <th scope='col'>Acciones</th>
                     </tr>
                 </thead>
-                <tbody key={productos}>
+                <tbody>
                     {productos.length > 0 ?
                         (
                             productos.map(producto => (
                                 <Producto
-                                    key={producto.id}
+                                    key={producto.precio} // Key para evitar warning de React
                                     producto={producto}
                                 />
                             ))
